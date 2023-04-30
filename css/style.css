@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Rozha";
+    src: url(/font/Rozha_One/RozhaOne-Regular.ttf);
+}
+
+.header-logo {
+    max-width: 200px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header, 
+footer {
+    background-color: #987554;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header,
+footer,
+a,
+p,
+h1,
+h2 {
+    font-family: "Rozha", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.big-header {
+    width: 700px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+}

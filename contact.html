@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Growth Guide | Contact</title>
 </head>
 <body>
@@ -22,6 +23,26 @@
     <main>
         <img class="big-header" src="/images/contact.png">
         <h1>Contact us</h1>
+        <form id="contactForm">
+            <label for="name">Enter your name (must be more than 5 characters):</label>
+            <input type="text" name="name" id="name" required minlength="6">
+            <br><br>
+
+            <label for="email">Enter your e-mail adress (valid email):</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="subject">Enter your subject (more than 15 characters):</label>
+            <input type="text" name="subject" id="subject" required minlength="16">
+            <br><br>
+
+            <label for="message">Enter your message here (needs to be more than 25 characters):</label>
+            <textarea name="message" id="message" required minlength="26"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    
     </main>
     <footer>Copyright Rebekka Nordheim&copy;2023</footer>
 </body>
