@@ -3,8 +3,12 @@
     src: url(/font/Rozha_One/RozhaOne-Regular.ttf);
 }
 
+body {
+    margin: 0px;
+}
+
 .header-logo {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 header {
@@ -16,11 +20,20 @@ header {
     top: 0;
 }
 
+.context {
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
     padding: 20px;
     color: #fff;
     text-align: center;
 }
+
 
 header, 
 footer {
@@ -46,9 +59,18 @@ nav li {
     padding: 10px;
     text-transform: uppercase;
 }
+
+.current {
+    text-decoration: underline;
+}
+
 .big-header {
     width: 700px;
     height: 150px;
     object-fit: cover;
     padding: 10px;
+}
+
+.text-content {
+    margin: 20px 50px;
 }
