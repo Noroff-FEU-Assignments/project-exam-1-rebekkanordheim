@@ -1,40 +1,41 @@
-/* const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function(event){
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const subject = document.getElementById("subject").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  let errorMessage = "";
+  let errorMessage ="";
 
-  // Validate the name field
+  //validating the name field
   if (name.length < 6) {
-    errorMessage += "Name must be at least 6 characters long.\n";
+    errorMessage += "The name must be at least 6 characters long."
   }
 
-  // Validate the email field
+  //validating the email field
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
-    errorMessage += "Email address must be valid.\n";
+    errorMessage += "The email adress must be valid, e.g. test1@email.com";
   }
 
-  // Validate the subject field
+  //validating the subject field
   if (subject.length < 16) {
-    errorMessage += "Subject must be at least 16 characters long.\n";
+    errorMessage += "The subject must be at least 16 characters long";
   }
 
-  // Validate the message field
+  //validating the message field
   if (message.length < 26) {
-    errorMessage += "Message must be at least 26 characters long.\n";
+    errorMessage += "The message must be at least 26 characters long";
   }
 
-  // If there is an error message, prevent form submission and display the error message
+  //if there is an errormessage appearing, prevent the form from submitting and tisplay this error message to let the user kno
   if (errorMessage !== "") {
     event.preventDefault();
     alert(errorMessage);
-  }
-}); */
+  } 
+});
+
 
 /* In this code, we first get the values of the input fields by their IDs and trim any leading or trailing whitespace from the input.
 
