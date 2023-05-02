@@ -25,10 +25,11 @@ header {
 }
 
 nav {
-    background: #483523;
+    background: #987554;
     display: none;
     position: fixed;
     right: 0px;
+    top: 120px;
 }
 
 nav li {
@@ -39,9 +40,15 @@ nav li {
 #hamburger-menu {
     display: none;
 }
-#hamburger-menu:checked  ~ nav {
-    display: inline-block;
+.fas,
+.fa-bars {
+    color: #FFF;
 }
+
+#hamburger-menu:checked  ~ nav {
+    display: block;
+}
+
 
 .current {
     text-decoration: underline;
