@@ -33,8 +33,9 @@ nav {
 }
 
 nav li {
-    display: inline-block;
-    padding: 10px;
+    display: block;
+    padding: 20px;
+    padding-right: 50px;
 }
 
 #hamburger-menu {
