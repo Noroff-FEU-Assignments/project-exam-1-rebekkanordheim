@@ -8,6 +8,7 @@
     src: url(/font/Questrial/Questrial-Regular.ttf);
 }
 
+
 body {
     margin: 0px;
 }
@@ -44,6 +45,7 @@ nav li {
 .fas,
 .fa-bars {
     color: #FFF;
+    font-size: 25px;
 }
 
 #hamburger-menu:checked  ~ nav {
@@ -81,6 +83,13 @@ form {
     font-family: "Rozha", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1,
+h2,
+p {
+    padding: 10px 30px;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -95,9 +104,15 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 .text-content {
     margin: 20px 50px;
 }
+
+.message {
+    color: green;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }

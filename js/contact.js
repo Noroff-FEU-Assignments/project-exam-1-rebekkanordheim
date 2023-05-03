@@ -33,7 +33,7 @@ form.addEventListener("submit", function(event){
   if (errorMessage !== "") {
     event.preventDefault();
     alert(errorMessage);
-  } 
+  }
 });
 
 
