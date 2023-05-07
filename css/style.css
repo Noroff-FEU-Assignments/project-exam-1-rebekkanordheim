@@ -78,8 +78,7 @@ footer {
 header,
 footer,
 h1,
-h2,
-form {
+h2{
     font-family: "Rozha", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -95,8 +94,9 @@ a {
     color: #FFF;
 }
 
+form,
 a,
-p {
+p  {
     font-family: "Questrial",Verdana, Geneva, Tahoma, sans-serif;
 }
 
