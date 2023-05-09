@@ -35,6 +35,12 @@ function createPostsHTML(posts) {
     content.innerHTML = post.content.rendered;
     postContainer.append(content);
 
+    // hide all p tags in the content div on the homepage
+     const pTags = content.querySelectorAll('p');
+     pTags.forEach(p => {
+       p.style.display = 'none';
+     });
+
     container.append(postContainer);
   });
 }
