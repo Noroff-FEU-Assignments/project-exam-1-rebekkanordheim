@@ -42,12 +42,10 @@ pTags.forEach(p => {
 });
 
 //making a button which links to the different oages individual page
-const button = document.createElement('button');
-    button.innerText = 'Read More';
-    button.addEventListener('click', () => {
-      window.location.href = `/post/${post.id}`;
-    });
-    postContainer.append(button);
+const link = document.createElement('a');
+    link.href = `/post/${post.id}`;
+    link.innerText = 'Read More';
+    postContainer.append(link);
 
     container.append(postContainer);
   });

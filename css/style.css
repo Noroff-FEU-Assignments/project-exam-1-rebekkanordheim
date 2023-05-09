@@ -112,11 +112,11 @@ p  {
     margin: 20px 50px;
 }
 
-.message {
+/* .message {
     color: green;
     text-transform: uppercase;
     border-radius: 10px;
-}
+} */
 
 input,
 textarea {
@@ -127,6 +127,16 @@ textarea {
 }
 
 #submit {
+    background-color: #E5D3B3;
+    border-radius: 10px;
+    border: 10px;
+    border-color: #664229;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container a {
+    color: #000;
     background-color: #E5D3B3;
     border-radius: 10px;
     border: 10px;
