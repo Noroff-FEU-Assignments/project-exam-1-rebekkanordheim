@@ -14,7 +14,7 @@ async function getPosts() {
   
 // fetching all the available posts
   async function getAllPosts() {
-  const response = await fetch('https://www.rebekkanordheim.no/wp-json/wp/v2/posts');
+  const response = await fetch('https://www.rebekkanordheim.no/wp-json/wp/v2/posts?per_page=12');
   return await response.json();
 }
 
@@ -35,11 +35,19 @@ function createPostsHTML(posts) {
     content.innerHTML = post.content.rendered;
     postContainer.append(content);
 
-    // hide all p tags in the content div on the homepage
-     const pTags = content.querySelectorAll('p');
-     pTags.forEach(p => {
-       p.style.display = 'none';
-     });
+// hide all p tags in the content div on the homepage
+const pTags = content.querySelectorAll('p');
+pTags.forEach(p => {
+    p.style.display = 'none';
+});
+
+//making a button which links to the different oages individual page
+const button = document.createElement('button');
+    button.innerText = 'Read More';
+    button.addEventListener('click', () => {
+      window.location.href = `/post/${post.id}`;
+    });
+    postContainer.append(button);
 
     container.append(postContainer);
   });

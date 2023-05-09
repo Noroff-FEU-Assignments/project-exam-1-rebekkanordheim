@@ -1,4 +1,4 @@
-/* async function getPosts() {
+async function getPosts() {
     const response = await fetch("https://www.rebekkanordheim.no/wp-json/wp/v2/posts?per_page=12");
     return await response.json();
   }
@@ -40,4 +40,4 @@ async function OnePostPage() {
   createPostHTML(post);
 }
 
-OnePostPage(); */
+OnePostPage();
