@@ -133,3 +133,8 @@ textarea {
     padding: 10px;
     text-transform: uppercase;
 }
+
+.post img {
+    width: 50%;
+    height: auto;
+}
