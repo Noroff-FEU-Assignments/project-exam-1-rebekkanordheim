@@ -42,11 +42,6 @@ pTags.forEach(p => {
 });
 
 //making a button which links to the different oages individual page
-/* const link = document.createElement('a');
-    link.href = `/post/${post.id}`;
-    link.innerText = 'Read More';
-    postContainer.append(link); */
-
     const readMoreButton = document.createElement('a');
     readMoreButton.classList.add('read-more');
     readMoreButton.innerText = 'Read More';

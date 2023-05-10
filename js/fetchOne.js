@@ -11,10 +11,13 @@ async function getPosts() {
   myPosts();
 
   //Create JavaScript functionality to fetch a single product’s data from WordPress API
-  async function getProductById(id) {
-    const response = await fetch(`https://www.rebekkanordheim.no/wp-json/wp/v2/posts/${id}`);
+  async function getPostById() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const postId = urlParams.get('id');
+    const response = await fetch(`https://www.rebekkanordheim.no/wp-json/wp/v2/posts/${postId}`);
     return await response.json();
   }
+  
   
   function createPostHTML(post) {
     const container = document.querySelector(".container");
