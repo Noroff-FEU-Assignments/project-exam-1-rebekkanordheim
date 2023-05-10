@@ -52,7 +52,7 @@ pTags.forEach(p => {
     readMoreButton.innerText = 'Read More';
     readMoreButton.href = `post.html?id=${post.id}`;
     postContainer.append(readMoreButton);
-    
+
     container.append(postContainer);
   });
 }
