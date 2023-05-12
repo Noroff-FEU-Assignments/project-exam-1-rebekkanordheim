@@ -17,7 +17,7 @@ async function getPosts() {
   }
   
   function createPostHTML(post) {
-    const container = document.querySelector(".container");
+    const container = document.getElementById("motivation");
           
     const postContainer = document.createElement("div");
     postContainer.classList.add("post");
@@ -35,9 +35,10 @@ async function getPosts() {
 }
 
 async function OnePostPage() {
-  const postId = 26;
-  const post = await getProductById(postId);
-  createPostHTML(post);
-}
+    const urlParams = new URLSearchParams(window.location.search);
+    const postId = urlParams.get('id');
+    const post = await getProductById(postId);
+    createPostHTML(post);
+  }  
 
 OnePostPage();

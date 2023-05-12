@@ -45,7 +45,7 @@ pTags.forEach(p => {
     const readMoreButton = document.createElement('a');
     readMoreButton.classList.add('read-more');
     readMoreButton.innerText = 'Read More';
-    readMoreButton.href = `post.html?id=${post.id}`;
+    readMoreButton.href = `motivation.html?id=${post.id}`;
     postContainer.append(readMoreButton);
 
     container.append(postContainer);
