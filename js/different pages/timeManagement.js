@@ -28,10 +28,10 @@ async function getPosts() {
     postContainer.append(title);
   
     const content = document.createElement("div");
-  content.innerHTML = post.content.rendered;
-  postContainer.append(content);
+    content.innerHTML = post.content.rendered;
+    postContainer.append(content);
 
-  container.append(postContainer);
+    container.append(postContainer);
 }
 
 async function OnePostPage() {
