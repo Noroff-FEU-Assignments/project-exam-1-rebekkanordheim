@@ -34,10 +34,16 @@ async function getPosts() {
   container.append(postContainer);
 }
 
-async function OnePostPage() {
+/* async function OnePostPage() {
   const postId = 29;
   const post = await getProductById(postId);
   createPostHTML(post);
-}
+} */
+async function OnePostPage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const postId = urlParams.get('id');
+    const post = await getProductById(postId);
+    createPostHTML(post);
+  } 
 
 OnePostPage();
