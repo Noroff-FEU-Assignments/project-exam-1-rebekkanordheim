@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Rozha+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/775e56e9e6.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
     <script src="js/contact.js"></script>
     <script src="js/fetchAll.js"></script>
-    <!-- <script src="js/fetchOne.js"></script> -->
     <title>Growth Guide | Home</title>
 </head>
 <body>
@@ -32,12 +32,19 @@
             </ul>
         </nav>
     </header>
-    <main class="context">
+    <main class="contextHome">
         <img class="big-header" src="/images/growthguideheader-min.png" alt="The growth Guide header image">
         <h1>Welcome to the Growth Guide</h1>
         <p class="text-content">Welcome to The Growth Guide, your source for personal development. Our blog offers insights and resources to help you improve your life and achieve your goals. Let's grow together.</p>
         <h2>Our latest posts</h2>
-        <div class="container"></div>
+        <div class="carousel">
+            <div class="slides-container">
+                <div class="container"></div>
+            </div>
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
     </main>
     <footer>
     Copyright Rebekka Nordheim&copy;2023

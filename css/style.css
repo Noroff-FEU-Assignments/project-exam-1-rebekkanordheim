@@ -107,9 +107,10 @@ p  {
     max-width: 70%;
 }
 
-/* Contact page */
-.text-content {
+.text-content,
+.motivation {
     margin: 20px 50px;
+    padding: 20px;
 }
 
 /* .message {
@@ -151,3 +152,5 @@ textarea {
     width: 50%;
     height: auto;
 }
+
+ 
