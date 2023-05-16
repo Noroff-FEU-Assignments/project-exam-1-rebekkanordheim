@@ -1,13 +1,14 @@
+//making a call to fetch the blog posts from the API
 async function getPosts() {
     const response = await fetch("https://www.rebekkanordheim.no/wp-json/wp/v2/posts?per_page=12");
     return await response.json();
   }
   
+  //console logging the data to check if it calls right
   async function myPosts() {
     const posts = await getPosts();
     console.log(posts);
   }
-  
   myPosts();
 
   //Create JavaScript functionality to fetch a single product’s data from WordPress API
