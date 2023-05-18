@@ -13,14 +13,14 @@ async function getPosts() {
 
 //creating the HTML for each post that gets called from the API
 function createPostsHTML(posts) {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.carousel-home');
 
   posts.forEach(post => {
     const postContainer = document.createElement('div');
     postContainer.classList.add('post');
     postContainer.id = post.id;
 
-    const title = document.createElement('h2');
+    const title = document.createElement('h3');
     title.innerText = post.title.rendered;
     postContainer.append(title);
 
@@ -49,7 +49,6 @@ async function allPostsPage() {
   const posts = await getPosts();
   createPostsHTML(posts);
 }
-//calling the function to run the function
 allPostsPage();
 
 //Create JavaScript functionality to fetch a single product’s data from WordPress API
@@ -65,13 +64,13 @@ function createPostHTML(post) {
   postContainer.classList.add("post");
   postContainer.id = post.id;
 
-  const title = document.createElement("h2");
+  const title = document.createElement("h3");
   title.innerText = post.title.rendered;
   postContainer.append(title);
 
   const content = document.createElement("div");
-content.innerHTML = post.content.rendered;
-postContainer.append(content);
+  content.innerHTML = post.content.rendered;
+  postContainer.append(content);
 
 container.append(postContainer);
 }
