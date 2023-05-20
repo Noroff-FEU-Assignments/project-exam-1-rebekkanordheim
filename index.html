@@ -12,7 +12,6 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
     <script src="js/fetchAll.js" defer></script>
-    <script src="js/carousel.js" defer></script>
     <title>Growth Guide | Home</title>
 </head>
 <body>
@@ -32,16 +31,22 @@
         </nav>
     </header>
     <main class="contextHome">
+        <section>
         <img class="big-header" src="/images/growthguideheader-min.png" alt="The growth Guide header image">
         <h1>Welcome to the Growth Guide</h1>
         <p class="text-content">Welcome to The Growth Guide, your source for personal development. Our blog offers insights and resources to help you improve your life and achieve your goals. Let's grow together.</p>
-        <h2>Our latest posts</h2>
-        
-        <div class="carousel" data-carousel>
-            <button class="buttonLeft">&#8249;</button>
-            <div class="post"></div>
-            <button class="buttonRight">&#8250;</button>
-        </div>
+        </section>
+        <section>
+            <h2>Our latest posts</h2>
+            <div class="carousel" data-carousel>
+              <button class="buttonLeft">&#8249;</button>
+              <div class="carousel-items">
+                <!-- Blog posts will be dynamically inserted here -->
+              </div>
+              <button class="buttonRight">&#8250;</button>
+            </div>
+          </section>
+          
     </main>
     <footer>
     Copyright Rebekka Nordheim&copy;2023
