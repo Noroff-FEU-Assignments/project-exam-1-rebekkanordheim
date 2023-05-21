@@ -156,6 +156,12 @@ textarea {
     text-transform: uppercase;
 }
 
+.carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
 .post img,
 .carousel img {
   display: block;
