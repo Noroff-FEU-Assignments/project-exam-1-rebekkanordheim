@@ -161,9 +161,15 @@ textarea {
     flex-direction: row;
     padding: 50px;
 }
+.carousel-items {
+    display: flex;
+    flex-direction: row;
+
+}
 
 .post img,
-.carousel img {
+.carousel img,
+.carouselBlog img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -171,6 +177,7 @@ textarea {
   height: auto;
   object-fit: cover;
 }
+
 
 .read-more,
 .buttonLeft,
