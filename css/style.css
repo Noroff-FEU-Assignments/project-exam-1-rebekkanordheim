@@ -121,11 +121,11 @@ p  {
     padding: 20px;
 }
 
-/* .message {
+#submitMessage {
     color: green;
     text-transform: uppercase;
     border-radius: 10px;
-} */
+}
 
 /* contactpage */
 input,
