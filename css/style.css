@@ -2,13 +2,11 @@
     font-family: "Rozha";
     src: url(/font/Rozha_One/RozhaOne-Regular.ttf);
 }
-
 @font-face {
     font-family: "Questrial";
     src: url(/font/Questrial/Questrial-Regular.ttf);
 }
-
-
+/* Global styles -> top of page  */
 body {
     margin: 0px;
 }
@@ -16,7 +14,6 @@ body {
 .header-logo {
     max-width: 150px;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -24,7 +21,6 @@ header {
     position: sticky;
     top: 0;
 }
-
 nav {
     background: #987554;
     display: none;
@@ -32,7 +28,6 @@ nav {
     right: 0px;
     top: 120px;
 }
-
 nav li {
     display: block;
     padding: 20px;
@@ -41,7 +36,7 @@ nav li {
 .current {
     text-decoration: underline;
 }
-
+/* Hamburger */
 #hamburger-menu {
     display: none;
 }
@@ -54,6 +49,7 @@ nav li {
     display: block;
 }
 
+/* Global styles on mid- and bottom */
 .context,
 .contextHome {
     padding: 20px;
@@ -62,13 +58,76 @@ nav li {
     flex-direction: column;
     align-items: center;
 }
+.container a {
+    color: #000;
+    background-color: #E5D3B3;
+    border-radius: 10px;
+    border: 10px;
+    border-color: #664229;
+    padding: 10px;
+    text-transform: uppercase;
+}
 
+.carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;;
+  }
+
+.post img,
+.carousel img,
+.carouselBlog img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Buttons */
+.read-more {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #B99976;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+.buttonLeft,
+.buttonRight{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #B99976;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover, 
+  .buttonLeft:hover,
+  .buttonRight:hover {
+    background-color: #5a5751;
+}
+
+/* Header/footer, headings etc. */
 footer {
     padding: 20px;
     color: #fff;
     text-align: center;
 }
-
 header, 
 footer {
     background-color: #987554;
@@ -85,9 +144,9 @@ h3,
 
 h1,
 h2,
-h3,
-.read-more {
+h3 {
     text-align: center;
+    text-decoration: underline;
 }
 
 p {
@@ -99,7 +158,6 @@ a {
     text-decoration: none;
     color: #FFF;
 }
-
 form,
 a,
 p  {
@@ -120,23 +178,14 @@ p  {
     padding: 20px;
 }
 
-.form-error {
+/* .form-error {
     display: none;
     color: red;
     font-size: 0.7rem;
     margin-top: 2px;
-}
+} */
 
-#submitMessage {
-    color: green;
-    background-color: rgba(100, 205, 100, 0.217);
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 20px;
-}
-
-/* contactpage */
+/* Contact page styles */
 input,
 textarea {
     background-color: #e5d3b396;
@@ -155,54 +204,11 @@ textarea {
     
 }
 
-.container a {
-    color: #000;
-    background-color: #E5D3B3;
-    border-radius: 10px;
-    border: 10px;
-    border-color: #664229;
-    padding: 10px;
+#submitMessage {
+    color: green;
+    background-color: rgba(100, 205, 100, 0.217);
     text-transform: uppercase;
-}
-
-.carousel {
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-}
-.carousel-items {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.post img,
-.carousel img,
-.carouselBlog img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-.read-more,
-.buttonLeft,
-.buttonRight{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 15px;
-    background-color: #B99976;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .read-more:hover, 
-  .buttonLeft:hover,
-  .buttonRight:hover {
-    background-color: #5a5751;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 20px;
 }

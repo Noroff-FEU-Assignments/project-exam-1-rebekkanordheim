@@ -13,4 +13,9 @@
     }
 }
 
-
+@media (max-width: 1050px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+}
