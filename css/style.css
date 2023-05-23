@@ -38,6 +38,9 @@ nav li {
     padding: 20px;
     padding-right: 50px;
 }
+.current {
+    text-decoration: underline;
+}
 
 #hamburger-menu {
     display: none;
@@ -47,13 +50,8 @@ nav li {
     color: #FFF;
     font-size: 25px;
 }
-
 #hamburger-menu:checked  ~ nav {
     display: block;
-}
-
-.current {
-    text-decoration: underline;
 }
 
 .context,
@@ -80,7 +78,8 @@ header,
 footer,
 h1,
 h2,
-h3{
+h3,
+#submitMessage{
     font-family: "Rozha", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -121,10 +120,20 @@ p  {
     padding: 20px;
 }
 
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 2px;
+}
+
 #submitMessage {
     color: green;
+    background-color: rgba(100, 205, 100, 0.217);
     text-transform: uppercase;
     border-radius: 10px;
+    font-size: 20px;
+    margin: 20px;
 }
 
 /* contactpage */
