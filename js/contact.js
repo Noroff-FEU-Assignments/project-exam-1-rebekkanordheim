@@ -37,9 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
     if (errorMessage !== "") {
       alert(errorMessage);
     } else {
-      // Simulate form submission by waiting for a few seconds (replace this with your actual form submission logic)
+      // Simulate form submission by waiting for a few seconds
       await new Promise(resolve => setTimeout(resolve, 500));
-
       // Display the success message in the submitMessage div
       const submitMessage = document.getElementById("submitMessage");
       submitMessage.textContent = "Form submitted successfully!";
