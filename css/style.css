@@ -22,7 +22,7 @@ header {
     top: 0;
 }
 nav {
-    background: #987554;
+    background: #664229;
     display: none;
     position: fixed;
     right: 0px;
@@ -36,6 +36,7 @@ nav li {
 .current {
     text-decoration: underline;
 }
+
 /* Hamburger */
 #hamburger-menu {
     display: none;
@@ -93,33 +94,22 @@ nav li {
 }
 
 /* Buttons */
-.read-more {
-    display: inline-block;
-    margin: auto;
-    padding: 10px 20px;
-    font-size: 15px;
-    background-color: #B99976;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+.read-more,
 .buttonLeft,
 .buttonRight{
     display: inline-block;
     padding: 10px 20px;
     font-size: 15px;
-    background-color: #b9997698;
+    background-color: #664229;
     color: #FFF;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
   }
   
   .read-more:hover, 
   .buttonLeft:hover,
   .buttonRight:hover {
-    background-color: #5a5751;
+    background-color: #B99976;
 }
 
 /* Header/footer, headings etc. */
@@ -130,7 +120,7 @@ footer {
 }
 header, 
 footer {
-    background-color: #987554;
+    background-color: #664229;
 }
 
 header,
@@ -158,11 +148,6 @@ a {
     text-decoration: none;
     color: #FFF;
 }
-a:not(.header-logo):hover {
-    text-decoration: underline;
-    background-color: #3e2819;
-    ;
-  }
 
 a
 form,
