@@ -119,6 +119,7 @@ footer {
     text-align: center;
 }
 header, 
+nav,
 footer {
     background-color: #664229;
 }
@@ -136,7 +137,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    text-decoration: underline;
+    
 }
 
 p {
@@ -184,6 +185,8 @@ textarea {
     border-radius: 5px;
     width: 250px;
     height: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 #submit {
