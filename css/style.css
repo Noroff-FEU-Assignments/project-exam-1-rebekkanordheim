@@ -150,7 +150,7 @@ h3 {
 }
 
 p {
-    padding: 10px 30px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -158,6 +158,11 @@ a {
     text-decoration: none;
     color: #FFF;
 }
+a:not(.header-logo):hover {
+    text-decoration: underline;
+    background-color: #3e2819;
+    ;
+  }
 
 a
 form,
